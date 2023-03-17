@@ -1,0 +1,8 @@
+name = str(input('Digite seu  completo: ')).strip()
+divide = name.split()
+print(name.upper())
+print(name.lower())
+print('Seu nome tem {} letras'.format(len(name)-name.count(' ')))
+print('O seu primeiro nome é {}'.format(divide[0]))
+print('Existem {} letras A no nome todo'.format(name.count('a')))
+print('O primeiro nome tem {} letras.'.format(len(divide[0])))

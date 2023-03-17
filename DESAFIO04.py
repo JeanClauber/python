@@ -1,0 +1,11 @@
+print('=====DESAFIO=====')
+algo = input('Digite algo: ')
+
+print('O tipo primitivo desse valor é: ' ,type(algo))
+print('Somente espaços? ',algo.isspace())
+print('É um numero? ',algo.isnumeric())
+print('É alfabetico? ',algo.isalpha())
+print('É um alfanumerico?' ,algo.isalnum())
+print('Está em maiusculo?' ,algo.isupper())
+print('Está minusculo? ',algo.islower())
+print('Está capitalizado? ',algo.istitle())
