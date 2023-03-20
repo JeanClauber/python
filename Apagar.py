@@ -32,14 +32,12 @@ while True:
         print('O total é R${:.2f}'.format(valor))
 
     elif escolha == 4:
-        print('Forma de pagamento credito em até 10x')
-        time.sleep(1)
-        vezes = int(input('Quantas parcelas : '))
-        valor_juros = valor + (valor * 0.20)
+        adicional =  0.01 * (vezes - 10)
+        valor_juros = valor + (valor *(0.20 + adicional))
         parcelas = valor_juros / vezes
-        time.sleep(1)
+        sleep(1)
         print('O valor total fica R${:.2f}'.format(valor_juros))
-        time.sleep(1)
+        sleep(1)
         print('Parcelas no valor de R${:.2f}'.format(parcelas))
         break
     else:
